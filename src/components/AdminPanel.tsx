@@ -1187,10 +1187,10 @@ export function AdminPanel({ settings, setSettings, onExit, isExiting, cardId, s
               </div>
 
               <div className="space-y-3 bg-white p-4 rounded-xl border border-stone-100 shadow-sm">
-                <label className="block text-sm font-medium text-stone-800">Groom Name</label>
-                <input type="text" name="heroGroomName" value={settings.heroGroomName || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" />
-                <label className="block text-sm font-medium text-stone-800 mt-2">Groom Parents Info</label>
-                <textarea name="heroGroomParents" value={settings.heroGroomParents || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" rows={2}></textarea>
+                <label className="block text-sm font-medium text-stone-800">Bride Name</label>
+                <input type="text" name="heroBrideName" value={settings.heroBrideName || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" />
+                <label className="block text-sm font-medium text-stone-800 mt-2">Bride Parents Info</label>
+                <textarea name="heroBrideParents" value={settings.heroBrideParents || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" rows={2}></textarea>
               </div>
 
               <div className="space-y-3 bg-white p-4 rounded-xl border border-stone-100 shadow-sm">
@@ -1199,14 +1199,14 @@ export function AdminPanel({ settings, setSettings, onExit, isExiting, cardId, s
               </div>
 
               <div className="space-y-3 bg-white p-4 rounded-xl border border-stone-100 shadow-sm">
-                <label className="block text-sm font-medium text-stone-800">Bride Name</label>
-                <input type="text" name="heroBrideName" value={settings.heroBrideName || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" />
-                <label className="block text-sm font-medium text-stone-800 mt-2">Bride Parents Info</label>
-                <textarea name="heroBrideParents" value={settings.heroBrideParents || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" rows={2}></textarea>
+                <label className="block text-sm font-medium text-stone-800">Groom Name</label>
+                <input type="text" name="heroGroomName" value={settings.heroGroomName || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" />
+                <label className="block text-sm font-medium text-stone-800 mt-2">Groom Parents Info</label>
+                <textarea name="heroGroomParents" value={settings.heroGroomParents || ''} onChange={handleChange} className="w-full px-3 py-2 border border-stone-200 rounded-md focus:ring-stone-900 sm:text-sm text-stone-600" rows={2}></textarea>
               </div>
 
               <div className="space-y-4 bg-white p-4 rounded-xl border border-stone-100 shadow-sm">
-                <h4 className="text-sm font-semibold text-stone-900 border-b border-stone-100 pb-2">Groom &amp; Bride Typography &amp; Visibility</h4>
+                <h4 className="text-sm font-semibold text-stone-900 border-b border-stone-100 pb-2">Bride &amp; Groom Typography &amp; Visibility</h4>
                 
                 <div className="space-y-2">
                   <label className="block text-xs font-medium text-stone-700">Font Style</label>

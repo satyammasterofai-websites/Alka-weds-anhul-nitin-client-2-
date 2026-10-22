@@ -82,33 +82,8 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
               {settings.heroTopText || 'We cordially invite you to witness the beginning of our forever and celebrate the wedding ceremony of'}
             </p>
 
-            {/* Systematic Centered Groom & Bride Section with small cohesive gap */}
+            {/* Systematic Centered Bride & Groom Section with small cohesive gap */}
             <div className="flex flex-col items-center justify-center w-full max-w-2xl mx-auto text-center">
-              {/* Groom Block */}
-              <div className="flex flex-col items-center justify-center w-full">
-                <h1 
-                  className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight py-0.5 sm:py-1 whitespace-pre-wrap transition-all tracking-wide text-center"
-                  style={{
-                    fontFamily: `"${settings.heroGroomBrideFont || 'Playfair Display'}", serif`,
-                    color: settings.heroGroomBrideColor || '#7a103c',
-                    opacity: settings.heroGroomBrideOpacity !== undefined ? settings.heroGroomBrideOpacity / 100 : 0.9,
-                    textShadow: '0 1px 3px rgba(255, 255, 255, 0.75), 0 2px 10px rgba(122, 16, 60, 0.15)'
-                  }}
-                >
-                  {settings.heroGroomName || 'Anshul Kestwal'}
-                </h1>
-                <p className="font-serif text-xs sm:text-sm md:text-base lg:text-lg tracking-wider uppercase mt-1 md:mt-1.5 whitespace-pre-wrap text-center max-w-md mx-auto leading-relaxed">
-                  {settings.heroGroomParents || 'S/o Mr. Rishi Ballabh Kestwal & Mrs. Shashi Kestwal'}
-                </p>
-              </div>
-
-              {/* Connector - with very small gap */}
-              <div className="flex items-center justify-center my-1.5 md:my-2.5">
-                <p className="font-serif text-sm sm:text-base md:text-xl italic text-[#8a1c47] text-center font-medium">
-                  {settings.heroMiddleText || 'with'}
-                </p>
-              </div>
-
               {/* Bride Block */}
               <div className="flex flex-col items-center justify-center w-full">
                 <h1 
@@ -122,8 +97,33 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
                 >
                   {settings.heroBrideName || 'Alka Joshi'}
                 </h1>
-                <p className="font-serif text-xs sm:text-sm md:text-base lg:text-lg tracking-wider uppercase mt-1 md:mt-1.5 pb-2 md:pb-4 whitespace-pre-wrap text-center max-w-md mx-auto leading-relaxed">
+                <p className="font-serif text-xs sm:text-sm md:text-base lg:text-lg tracking-wider uppercase mt-1 md:mt-1.5 whitespace-pre-wrap text-center max-w-md mx-auto leading-relaxed">
                   {settings.heroBrideParents || 'D/o Mr. Girish Joshi & Mrs. Bhawna Joshi'}
+                </p>
+              </div>
+
+              {/* Connector - with very small gap */}
+              <div className="flex items-center justify-center my-1.5 md:my-2.5">
+                <p className="font-serif text-sm sm:text-base md:text-xl italic text-[#8a1c47] text-center font-medium">
+                  {settings.heroMiddleText || 'with'}
+                </p>
+              </div>
+
+              {/* Groom Block */}
+              <div className="flex flex-col items-center justify-center w-full">
+                <h1 
+                  className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-tight py-0.5 sm:py-1 whitespace-pre-wrap transition-all tracking-wide text-center"
+                  style={{
+                    fontFamily: `"${settings.heroGroomBrideFont || 'Playfair Display'}", serif`,
+                    color: settings.heroGroomBrideColor || '#7a103c',
+                    opacity: settings.heroGroomBrideOpacity !== undefined ? settings.heroGroomBrideOpacity / 100 : 0.9,
+                    textShadow: '0 1px 3px rgba(255, 255, 255, 0.75), 0 2px 10px rgba(122, 16, 60, 0.15)'
+                  }}
+                >
+                  {settings.heroGroomName || 'Anshul Kestwal'}
+                </h1>
+                <p className="font-serif text-xs sm:text-sm md:text-base lg:text-lg tracking-wider uppercase mt-1 md:mt-1.5 pb-2 md:pb-4 whitespace-pre-wrap text-center max-w-md mx-auto leading-relaxed">
+                  {settings.heroGroomParents || 'S/o Mr. Rishi Ballabh Kestwal & Mrs. Shashi Kestwal'}
                 </p>
               </div>
             </div>
@@ -268,7 +268,7 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
               {settings.invitationMessageHeading || 'Awaiting Your Noble Presence'}
             </h3>
             <p className="font-serif italic text-lg md:text-xl text-[#6B5A51] leading-relaxed max-w-sm">
-              {settings.invitationMessageBody || 'Because meeting two souls requires twice the joy — and you! Please join us to celebrate the wedding of Anshul & Alka.'}
+              {settings.invitationMessageBody || 'Because meeting two souls requires twice the joy — and you! Please join us to celebrate the wedding of Alka & Anshul.'}
             </p>
             <div className="text-[#C9A15A]/60 mt-8 rotate-180">
               <span className="font-serif text-lg flex items-center opacity-70">--- <span className="mx-2 text-xl">✿</span> ---</span>
@@ -289,7 +289,7 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
               {settings.familyInviteHeading || 'WITH LOVE'}
             </p>
             <h3 className="text-5xl md:text-6xl font-['Great_Vibes',cursive] text-[#8D2342] mb-12">
-              {settings.familyInviteSubHeading1 || 'The Kestwal & Joshi Families'}
+              {settings.familyInviteSubHeading1 || 'The Joshi & Kestwal Families'}
             </h3>
             
             <div className="w-full border-[1px] border-[#C9A15A]/80 rounded-[2rem] p-12 flex flex-col items-center bg-[#FAF5EA]/40 backdrop-blur-sm shadow-sm relative">
@@ -301,7 +301,7 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
               </p>
               <div className="flex flex-col gap-4 font-serif text-lg md:text-xl text-[#6B5A51] leading-relaxed whitespace-pre-wrap">
                 {(() => {
-                  const raw = settings.familyNames || 'Mr. Rishi Ballabh Kestwal & Mrs. Shashi Kestwal\n(Parents of the Groom)\n\nMr. Girish Joshi & Mrs. Bhawna Joshi\n(Parents of the Bride)';
+                  const raw = settings.familyNames || 'Mr. Girish Joshi & Mrs. Bhawna Joshi\n(Parents of the Bride)\n\nMr. Rishi Ballabh Kestwal & Mrs. Shashi Kestwal\n(Parents of the Groom)';
                   return raw
                     .replace(/Parents of Groom/g, 'Parents of the Groom')
                     .replace(/Parents of Bride/g, 'Parents of the Bride')
@@ -378,7 +378,7 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
               {settings.footerInviteHeading || 'WITH LOVE'}
             </p>
             <h2 className="text-2xl md:text-3xl font-serif text-[#FAF5EA] mb-10 leading-tight max-w-lg tracking-[0.15em] uppercase font-medium">
-              {settings.footerInviteNames || 'Anshul Kestwal & Alka Joshi'}
+              {settings.footerInviteNames || 'Alka Joshi & Anshul Kestwal'}
             </h2>
             
             <div className="text-[#C9A15A]/60 mb-10">
@@ -389,7 +389,7 @@ export function HeroSection({ settings, onOpenAdmin, onPauseMusic }: Props) {
               {settings.footerInviteDate || '20th February 2027'}
             </p>
             <p className="font-serif tracking-[0.15em] text-[#C9A15A] text-[11px] md:text-xs uppercase font-semibold">
-              {settings.footerHashtag || '#ANSHULWEDSALKA'}
+              {settings.footerHashtag || '#ALKAWEDSANSHUL'}
             </p>
           </motion.div>
         </div>
