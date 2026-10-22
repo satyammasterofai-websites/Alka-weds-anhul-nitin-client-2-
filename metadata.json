@@ -1,0 +1,8 @@
+{
+  "name": "Remix Nitin sir client 2 ",
+  "description": "A customizable wedding e-card with a live-preview admin panel to adjust image layouts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
